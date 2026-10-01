@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-downloads-tidy-up"
+version = "1.0.0"
+description = "A safe file organizer that watches a downloads folder and sorts completed files."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["watchdog>=4.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smart_downloads_tidy_up*"]
